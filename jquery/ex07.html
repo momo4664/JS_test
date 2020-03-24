@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>
+<script> 
+    $(document).ready(function() {
+        $("button.b1").click(function() { $("img").animate({margin:"0px",left:'100px',height:"100px", width:'100px' }); });
+        $("button.b2").click(function() { $("img").animate({ width:'200px' }); });
+        $("button.b3").click(function() { $("img").animate({margin:"100px",left:"500px", height:"500px",width: '500px'}); });
+    });
+</script>  <style>
+    .css_pic { height: 430px; text-align: center; }
+    .css_pic img { width: 250px; }
+</style> </head> <body>
+    
+               버튼을 누르면 그림의 크기가 바뀝니다.<p/>
+        <button class="b1">가로 100픽셀</button> <button class="b2">가로 200픽셀</button>
+        <button class="b3">가로 300픽셀</button><br><br>
+        <img name="pic1" src="resources/images/car01.png"/>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
